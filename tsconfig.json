@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                   // Versión de ECMAScript a la que se compila
+    "module": "commonjs",                 // Módulos de Node.js
+    "outDir": "./dist",                   // Directorio de salida para los archivos compilados
+    "rootDir": "./api",                   // Directorio raíz de los archivos de entrada
+    "strict": true,                        // Habilitar todas las comprobaciones de tipo estricto
+    "esModuleInterop": true,               // Habilitar interoperabilidad entre módulos ES y CommonJS
+    "skipLibCheck": true,                 // Saltar la comprobación de archivos de definición de tipo
+    "forceConsistentCasingInFileNames": true // Asegurar el uso consistente de mayúsculas en los nombres de archivos
+  },
+  "include": [
+    "./api/*.ts"                          // Incluir todos los archivos .ts en la carpeta api
+  ],
+  "exclude": [
+    "node_modules",                       // Excluir la carpeta node_modules
+    "**/*.spec.ts"                        // Excluir archivos de prueba
+  ]
+}
